@@ -1,0 +1,19 @@
+/* Error: The target selector was not found.
+ * Use "@extend %description !optional" to avoid this error.
+ *    ,
+ * 38 | /         @extend %description
+ * 39 | |       }
+ *    | '------^
+ *    '
+ *   variables.scss 38:9  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: The target selector was not found.\aUse "@extend %description !optional" to avoid this error.\a    \2577 \a 38 \2502  \250c          @extend %description\a 39 \2502  \2502        }\a    \2502  \2514 \2500 \2500 \2500 \2500 \2500 \2500 ^\a    \2575 \a   variables.scss 38:9  root stylesheet';
+}
